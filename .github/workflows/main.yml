@@ -42,7 +42,7 @@ jobs:
   #
   publish:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push'
+    if: false && github.event_name == 'push'
     needs: build
 
     steps:
